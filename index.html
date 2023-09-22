@@ -329,7 +329,8 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"clickTo","qid":"1","text":"WELCOME 
               method: 'POST',
               headers: headers,
               body: JSON.stringify(payload),
-              redirect: 'follow'
+              redirect: 'follow',
+              mode: 'no-cors'
             };
             // --------------
             fetch("https://ts9i1uu1y1.execute-api.us-east-2.amazonaws.com/dev/prices", requestOptions)
